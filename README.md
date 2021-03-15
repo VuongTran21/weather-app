@@ -6,7 +6,6 @@
 - [React-testing-library](https://github.com/kentcdodds/react-testing-library) - Testing library of choice for react framework
 - [Yarn](https://yarnpkg.com/lang/en/) - Dependency management of choice
 
-## Clone project from [github](https://github.com/VuongTran21/weather-app)
 ## Available Scripts
 
 In the project directory, you can run:
