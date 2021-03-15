@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card-image {
+  padding: 10px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.search-wrapper span {
+  margin-left: -25px;
+}
