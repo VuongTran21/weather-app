@@ -6,6 +6,10 @@ export const useForecast = () => {
   const [forecasts, setForecasts] = useState([]);
 
   const getForecast = async (searchText) => {
+    if (!searchText) {
+      return setForecasts([]);
+    }
+
     setLoading(true);
     const urlLocation = `location/search/?query=${searchText}`;
 

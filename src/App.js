@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Col,
-  Container,
-  Row,
-} from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Search from './components/Search';
 import ForecastItem from './components/ForecastItem';
 
@@ -16,7 +12,7 @@ function App() {
     setForecasts(value);
   };
 
-  const noForecast = <Col>No data</Col>;
+  const noForecast = <Col>No forecast data exists.</Col>;
 
   if (forecasts) {
     forecasts.splice(5);

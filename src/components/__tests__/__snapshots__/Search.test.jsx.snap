@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Component should match snapshot 1`] = `
+<div>
+  <div
+    class="form-group"
+  >
+    <div
+      class="search-wrapper"
+    >
+      <input
+        class="form-control"
+        data-testid="input-search"
+        id="cityName"
+        placeholder="Enter your city name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

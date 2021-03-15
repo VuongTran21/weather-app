@@ -1,9 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import {
-  Button,
   Form,
-  FormControl,
-  InputGroup,
   Spinner,
 } from 'react-bootstrap';
 import { useForecast } from '../hooks/useForecast';
@@ -39,6 +36,7 @@ export default function Search({ onForecastChange }) {
     <Form.Group controlId="cityName">
       <div className="search-wrapper">
         <Form.Control
+          data-testid="input-search"
           onChange={onChange}
           value={inputText}
           type="text"
@@ -47,6 +45,7 @@ export default function Search({ onForecastChange }) {
 
         {loading && (
           <Spinner
+            data-testid="loading"
             as="span"
             animation="border"
             size="sm"
