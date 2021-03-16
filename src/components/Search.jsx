@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
-import {
-  Form,
-  Spinner,
-} from 'react-bootstrap';
+import { Form, Spinner } from 'react-bootstrap';
 import { useForecast } from '../hooks/useForecast';
 import debounce from 'lodash.debounce';
+import PropTypes from 'prop-types';
 
 export default function Search({ onForecastChange }) {
   const [inputText, setInputText] = useState('');
@@ -57,3 +55,7 @@ export default function Search({ onForecastChange }) {
     </Form.Group>
   );
 }
+
+Search.propTypes = {
+  onForecastChange: PropTypes.func.isRequired,
+};

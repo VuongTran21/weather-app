@@ -1,5 +1,6 @@
 import { Card, Col } from 'react-bootstrap';
 import { getDate } from '../utils';
+import PropTypes from 'prop-types';
 
 export default function ForecastItem({ forecast }) {
   const imageUrl = `https://www.metaweather.com/static/img/weather/png/${forecast.weather_state_abbr}.png`;
@@ -17,3 +18,13 @@ export default function ForecastItem({ forecast }) {
     </Col>
   );
 }
+
+ForecastItem.propTypes = {
+  forecast: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    max_temp: PropTypes.number.isRequired,
+    min_temp: PropTypes.number.isRequired,
+    applicable_date: PropTypes.string.isRequired,
+    weather_state_abbr: PropTypes.string.isRequired,
+  }),
+};
