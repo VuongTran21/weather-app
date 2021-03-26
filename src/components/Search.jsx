@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback, useEffect, useState } from 'react';
 import { Form, Spinner } from 'react-bootstrap';
 import { useForecast } from '../hooks/useForecast';
@@ -11,7 +12,6 @@ export default function Search({ onForecastChange }) {
     if (inputText) {
       getForecasts(inputText);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
